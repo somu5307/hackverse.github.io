@@ -349,8 +349,8 @@ let student_info_others =
         "Email_id": "shivagarg7568@gmail.com",
         "LinkedIn_profile": "https://www.linkedin.com/in/shiva-garg-73868a202/",
         "Profile_photo": "https://drive.google.com/file/d/14IK92XSsjJDvWVfRbfIk9K8jk_bV_-ze/view?usp=sharing",
-        "Profile_photo_url": "ezgif.com-gif-maker.jpg",
-        "Profile_Photo_name": "ezgif.com-gif-maker",
+        "Profile_photo_url": "shivagarg.jpg",
+        "Profile_Photo_name": "shivagarg",
         "Designation": "Website Team"
     },
     // {
@@ -484,8 +484,8 @@ let student_info_others =
         "Email_id": "psingh7274@gmail.com",
         "LinkedIn_profile": "https://www.linkedin.com/in/mansi-07/",
         "Profile_photo": "https://drive.google.com/file/d/1PboMbC62r0mxpMh9PGozCI7phjpGBWEF/view?usp=sharing",
-        "Profile_photo_url": "ezgif.com-gif-maker.jpg",
-        "Profile_Photo_name": "ezgif.com-gif-maker",
+        "Profile_photo_url": "ezgif.com-gif-maker-1.jpg",
+        "Profile_Photo_name": "ezgif.com-gif-maker-1",
         "Designation": "Technical Team"
     },
     
@@ -516,15 +516,15 @@ let student_info_others =
         "Profile_Photo_name": "1664693637825",
         "Designation": "Student Relations Team"
     },
-    {
-        "Name": "Harshwardhan Shinde",
-        "Email_id": "harshwardhan.201me224@nitk.edu.in",
-        "LinkedIn_profile": "https://www.linkedin.com/in/harshwardhan-shinde-358778231",
-        "Profile_photo": "https://drive.google.com/file/d/1VffIFxsQsuQPZc2CBBtUn5t2GWjNw4ik/view?usp=sharing",
-        "Profile_photo_url": "MY PIC.jpg",
-        "Profile_Photo_name": "MY PIC",
-        "Designation": "Operations Team"
-    },
+    // {
+    //     "Name": "Harshwardhan Shinde",
+    //     "Email_id": "harshwardhan.201me224@nitk.edu.in",
+    //     "LinkedIn_profile": "https://www.linkedin.com/in/harshwardhan-shinde-358778231",
+    //     "Profile_photo": "https://drive.google.com/file/d/1VffIFxsQsuQPZc2CBBtUn5t2GWjNw4ik/view?usp=sharing",
+    //     "Profile_photo_url": "MY PIC.jpg",
+    //     "Profile_Photo_name": "MY PIC",
+    //     "Designation": "Operations Team"
+    // },
     {
         "Name": "Aniket Tupe",
         "Email_id": "atupe507@gmail.com",
