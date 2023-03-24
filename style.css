@@ -222,6 +222,31 @@ button:focus {
   padding-bottom: 10px;
 }
 
+.hero-button {
+  color: white;
+  /* margin-top: 32px; */
+  font-weight: 700;
+  background-color: #00A1FF;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 12px 16px;
+  /* padding: 4px 4px; */
+  transition: all 0.4s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #6ec5ff;
+}
+
+
+.hero-button-container > a > img {
+  transition: all 0.6s;
+}
+.hero-button-container > a > img:hover {
+  transform: scale(0.9);
+}
+
 .about {
   /* background-color: #d1e5dc; */
   /* background-color: #1d1d3a; */
