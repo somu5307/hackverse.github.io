@@ -459,7 +459,7 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
   padding-bottom: 300px;
   color: #dcf0fc;
   padding-top: 8%;
-  background: url("img/trees-snow.png") bottom no-repeat, #63c3fb;
+  background: url("img/trees-snow.webp") bottom no-repeat, #63c3fb;
   background-size: 100%, cover;
 }
 
