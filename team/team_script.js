@@ -462,7 +462,7 @@ let student_info_others =
         "Designation": "Content Team"
     },
     {
-        "Name": "Abhinav Bharwli",
+        "Name": "Abhinav Bharali",
         "Email_id": "abhinavbharali10@gmail.com",
         "LinkedIn_profile": "https://www.linkedin.com/in/abhinav-bharali",
         "Profile_photo": "https://drive.google.com/file/d/1YPAHyAC2h16n0ZoKpma-rdnlrLNyqMP2/view?usp=drivesdk",
