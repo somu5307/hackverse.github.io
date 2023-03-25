@@ -360,9 +360,6 @@ button:focus {
 .stats-card {
   /* background-color: rgb(0, 162, 255, 0.05); */
   background-color: rgba(0, 0, 0, 0.332);
-  margin-bottom: 5%;
-  padding-top: 2%;
-  backdrop-filter: blur(10px);
   opacity: 10;
   z-index: 400;
   /* mask: linear-gradient(transparent, black 1000%); */
@@ -434,6 +431,51 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
   z-index: 1000;
 }
 /* End Testimonials */
+
+/* Start Photo Roller */
+.testimonials-photo-roll-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 10px auto;
+}
+.testimonials-photo-roll {
+  height: 300px;
+  width: 3500px;
+  font-size: 0;
+}
+.testimonials-photo-roll img {
+  height: 233px;
+  width: 350px;
+  transition: all 0.5s ease;
+  object-fit: cover;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.testimonials-photo-roll img:nth-child(even){
+  transform: rotate(2deg);
+}
+.testimonials-photo-roll img:nth-child(odd){
+  transform: rotate(-2deg);
+}
+.testimonials-photo-roll img:hover{
+  transform: rotate(0deg);
+}
+.testimonials-photo-roll img:hover {
+  cursor: pointer;
+}
+.testimonials-photo-roll img:first-child {
+  animation: bannermove 25s linear infinite;
+}
+/* Keyframe animations*/
+@keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2130px;
+  }
+}
+/* End Photo Roller */
 
 .bold-t1 {
   font-size: 36px;
