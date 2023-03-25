@@ -514,10 +514,55 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
   font-size: 1.25rem;
   padding: 12px 16px;
   transition: all 0.4s ease-in-out;
+  text-align: center;
 }
 
 .sponsor:hover {
   background-color: #6ec5ff;
+}
+
+.sponsor-section-link{
+  color: #63c3fb;
+}
+
+#sponsors .row img {
+  max-width: 250px;
+  width: auto;
+  max-height: 200px;
+}
+
+#sponsors a:hover {
+  transform: scale(1.07);
+}
+
+#sponsor .row .col-6{
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+@media only screen and (min-width: 521px) and (max-width: 1000px) {
+  #sponsors .row img {
+    width: 95%;
+  }
+
+  .sponsor-us{
+    padding: 30px 60px 30px 60px;
+  }
+
+  .sponsor-us p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .sponsor-us {
+    padding: 30px 30px 30px 30px;
+  }
+
+  .sponsor-us p {
+    font-size: 0.75rem;
+  }
 }
 
 
@@ -529,9 +574,9 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 }
 
 .faq {
-  min-height: 120vh;
+  min-height: 150vh;
+  padding-bottom:25%;
   background-color: #021f3b;
-  padding-bottom: 300px;
   color: #dcf0fc;
   padding-top: 8%;
   background: url("img/trees-snow.webp") bottom no-repeat, #63c3fb;
