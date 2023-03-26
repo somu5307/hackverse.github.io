@@ -161,19 +161,18 @@ button:focus {
 }
 .blink-soft {
   font-size: 0.7rem;
+  text-align: center;
   /* padding: 1% 1% 0 1%; */
   padding: 0;
   margin: 0;
-  animation: blinker 1.5s linear infinite;
-  animation-delay: 4s;
   /* align-items: center;
   align-content: center; */
 }
 .hero-card-top{
-  color: #ffffffff;
-  /* min-width: 400px;
-  width: 40vmin; */
-  padding: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  min-width: 400px;
+  width: 40vmin;
+  padding: 0.5rem;
   margin: 1rem 0 0 0;
   align-items: center;
   /* backdrop-filter: blur(3px); */
@@ -181,6 +180,14 @@ button:focus {
   /* background: rgba(136, 210, 252, 0.5); */
   background: rgba(136, 210, 252, 0.1);
   border-radius: 6px;
+  animation: blinker 2s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@media only screen and (max-width: 520px) {
+  .hero-card-top{
+    display: none;
+  }
 }
 
 @keyframes blinker {
@@ -242,21 +249,28 @@ button:focus {
   padding-bottom: 10px;
 }
 
+
+.hero-buttons-container{
+  max-width: 312px;
+}
+
 .hero-button {
   color: white;
   /* margin-top: 32px; */
   font-weight: 700;
-  background-color: #00A1FF;
+  background-color: rgb(110, 197, 255,0.8);
+  border: 1px solid rgb(253, 253, 254,0.5);
   border-radius: 50px;
   width: 100%;
   font-size: 1.25rem;
-  padding: 12px 16px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2vmin;
   /* padding: 4px 4px; */
   transition: all 0.4s ease-in-out;
 }
 
 .hero-button:hover {
-  background-color: #6ec5ff;
+  background: rgba(136, 210, 252, 0.8);
 }
 
 
@@ -881,8 +895,8 @@ a {
   color: #f3faff;
   min-width: 400px;
   width: 40vmin;
-  padding: 0.8rem 0;
-  margin: 5vh 0;
+  padding: 0.5rem 0;
+  margin: 3vh 0;
   align-items: center;
   /* backdrop-filter: blur(3px); */
   border: 1px solid rgba(176, 227, 246, 0.2);
