@@ -284,9 +284,9 @@ button:focus {
 }
 
 .about h2 {
-  text-align: center;
+  text-align: left;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 35px;
 }
 
 .about p {
