@@ -184,12 +184,6 @@ button:focus {
   animation-delay: 2s;
 }
 
-@media only screen and (max-width: 520px) {
-  .hero-card-top{
-    display: none;
-  }
-}
-
 @keyframes blinker {
   50% {
     opacity: 0;
@@ -258,14 +252,13 @@ button:focus {
   color: white;
   /* margin-top: 32px; */
   font-weight: 700;
-  background-color: rgb(110, 197, 255,0.9);
-  border: 1px solid rgba(253, 253, 254, 0.3);
-  border-radius: 0.25rem;
+  background-color: rgb(110, 197, 255,0.8);
+  border: 1px solid rgb(253, 253, 254,0.5);
+  border-radius: 50px;
   width: 100%;
-  font-size: 1.25rem;
-  padding: 0.5rem 1rem;
+  font-size: 1em;
+  padding: 0.5em 1em;
   margin-bottom: 2vmin;
-  box-shadow: 1.5px 1.5px 1.5px 0.8px #ffffff21;
   /* padding: 4px 4px; */
   transition: all 0.4s ease-in-out;
 }
