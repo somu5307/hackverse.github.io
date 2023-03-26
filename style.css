@@ -390,6 +390,7 @@ button:focus {
 .stats-card {
   /* background-color: rgb(0, 162, 255, 0.05); */
   background-color: rgba(0, 0, 0, 0.332);
+  /* background-color: #fff; */
   opacity: 10;
   z-index: 400;
   /* mask: linear-gradient(transparent, black 1000%); */
