@@ -160,6 +160,8 @@ button:focus {
   animation-delay: 4s;
 }
 .blink-soft {
+  font-size: 0.8rem;
+  padding-bottom: 10px;
   animation: blinker 1.5s linear infinite;
   animation-delay: 4s;
 }
@@ -231,7 +233,7 @@ button:focus {
   width: 100%;
   font-size: 1.25rem;
   padding: 12px 16px;
-  width:100%; height:100%
+  /* padding: 4px 4px; */
   transition: all 0.4s ease-in-out;
 }
 
@@ -347,6 +349,16 @@ button:focus {
   background-color: #00A1FF;
 }
 
+#stats-section{
+  position: relative;
+    padding-top: 0%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .stats {
   background-color: #201c3c;
   min-height: 80vh;
@@ -433,19 +445,26 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 /* End Testimonials */
 
 /* Start Photo Roller */
+:root {
+  --photoCount: 6;
+  --photoWidth: 350px;
+  --photoHeight: 233px;
+}
+
 .testimonials-photo-roll-container {
   width: 100%;
   overflow: hidden;
-  margin: 10px auto;
+  margin: 10vmin auto;
 }
 .testimonials-photo-roll {
-  height: 300px;
-  width: 3500px;
+  height: calc(var(--photoHeight) + 55px);
+  /* width: calc(var(--photoHeight) * var(--photoWidth)); */
+  width: 2532px; /* photoHeight * photoWidth */
   font-size: 0;
 }
 .testimonials-photo-roll img {
-  height: 233px;
-  width: 350px;
+  height: var(--photoHeight);
+  width: var(--photoWidth);
   transition: all 0.5s ease;
   object-fit: cover;
   margin: 2rem;
@@ -472,10 +491,53 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     margin-left: 0px;
   }
   100% {
-    margin-left: -2130px;
+    margin-left: -2000px;
   }
 }
 /* End Photo Roller */
+
+/* Start roller img shine on hover */
+
+.img-shine {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.img-shine:after {
+  content: "";
+  position: absolute;
+    top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+.img-shine:hover:after {
+  opacity: 1;
+  left: 130%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+.img-shine:active:after {
+  opacity: 0;
+}
+
+/* End roller img shine on hover */
 
 .bold-t1 {
   font-size: 36px;
@@ -541,6 +603,7 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 }
 
 .sponsor-us {
+  padding: 70px 30px;
   background-color: #DCF1FF;
   min-height: 100vh;
   overflow-x: hidden;
@@ -598,6 +661,10 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 }
 
 @media only screen and (max-width: 520px) {
+  #sponsors .row img {
+    width: 80%;
+  }
+
   .sponsor-us {
     padding: 30px 30px 30px 30px;
   }
@@ -606,6 +673,7 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     font-size: 0.75rem;
   }
 }
+
 
 .sponsor-container > a > img {
   transition: all 0.6s;
@@ -797,10 +865,10 @@ a {
   padding: 1rem 0;
   margin: 5vh 0;
   align-items: center;
-  backdrop-filter: blur(3px);
-  border: 1px solid #36c6fb4b;
+  /* backdrop-filter: blur(3px); */
+  border: 1px solid rgba(176, 227, 246, 0.2);
   /* background: rgba(136, 210, 252, 0.5); */
-  background: rgba(136, 210, 252, 0.3);
+  background: rgba(136, 210, 252, 0.1);
   border-radius: 6px;
 }
 

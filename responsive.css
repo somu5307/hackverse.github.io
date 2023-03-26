@@ -13,6 +13,7 @@
   /* Navbar */
   .navbar-brand {
     width: 60px;
+    height: auto;
     margin: 0px 13px;
   }
   .navbar-toggler {
